@@ -1,12 +1,12 @@
 var options = {
-      imgSrc : "https://unsplash.it/g/1024/768?image=874",
+      imgSrc : "Beauty.jpg",
       containerName : "placeholder",
       rows:5,
       columns:5,
       margin:2.5,
       animTime: 0.3
     }
-    
+
     function ImageGrid(defaults)
     {
       var r = defaults.rows;
@@ -16,14 +16,14 @@ var options = {
       var placeholder = document.getElementsByClassName(defaults.containerName)[0];
       var container = document.createElement('div');
       container.className = "gridContainer";
-      placeholder.appendChild(container); 
-        
+      placeholder.appendChild(container);
+    
       var gridTile;  
     
       var w = (container.offsetWidth / c) -margin;
       var h = (container.offsetHeight / r) -margin;
       var arr = [];
-        
+
       for (var i=0, l=r*c; i < l; i++)
       {    
         gridTile = document.createElement('div');
