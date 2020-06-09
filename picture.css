@@ -1,3 +1,10 @@
 /*# sourceMappingURL=picture.scss.map */
+body {
+  background-color: #151515;
+  color: rgba(0, 255, 178, 0.18);
+  text-align: center; }
+
+body:hover {
+  color: #00ffb2; }
 
 /*# sourceMappingURL=picture.css.map */

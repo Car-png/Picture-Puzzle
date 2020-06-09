@@ -1,1 +1,13 @@
 /*# sourceMappingURL=picture.scss.map */
+$color: rgba(0,255,178,0.18);
+$colorHover: rgb(0,255,178);
+
+body{
+      background-color: #151515;
+      color: $color;
+      text-align: center;
+}
+
+body:hover{
+      color: $colorHover;
+}
