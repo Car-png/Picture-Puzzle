@@ -9,7 +9,7 @@ body {
 
 .image {
   margin: 1rem auto;
-  width: 50%;
+  width: 46.8%;
   height: 99.5%;
 }
 
@@ -25,7 +25,7 @@ body {
   width: $fragment-size;
   height: $fragment-size;
   float: left;
-  transition: background-size 0.5s;
+  transition: background-size 1s;
 }
 
 @for $i from 1 through $divisions {
@@ -39,4 +39,30 @@ body {
     }
   }
 }
-  
+
+label{
+      color: #207553;
+      font-size: 50px;
+      position: absolute;
+      margin-top: -200px;
+      margin-right: 50px;
+      right: 0;
+      font-family: 'JCardenas';
+      -webkit-box-reflect: below 2px linear-gradient(transparent, #2075534d);
+      filter: blur(2px);
+}
+
+label:hover{
+      filter: blur(0px);
+      transition: 1s ease;
+      transform: rotatex(50deg);
+}
+
+label::selection{
+      background-color: transparent;
+}
+
+@font-face{
+      font-family: 'JCardenas';
+      src: url(Surfing\ Capital.ttf);
+}
