@@ -3,4 +3,8 @@ head
       meta(name="viewport" content="")
       link(rel="stylesheet", href="picture.css")
 body
-      label JCardenas Give u the Welcome to her first page create with .pug
+      - var n = 0;
+      .image
+            while n < 25
+                  .image__fragment
+                  - n++

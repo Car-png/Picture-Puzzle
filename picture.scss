@@ -1,13 +1,42 @@
-/*# sourceMappingURL=picture.scss.map */
-$color: rgba(0,255,178,0.18);
-$colorHover: rgb(0,255,178);
+$image-size: 600px;
+$gutter-size: 4px;
+$divisions: 5;
+$fragment-size: $image-size / $divisions;
 
-body{
-      background-color: #151515;
-      color: $color;
-      text-align: center;
+body {
+  background-color:#1A1919;
 }
 
-body:hover{
-      color: $colorHover;
+.image {
+  margin: 1rem auto;
+  width: 50%;
+  height: 99.5%;
 }
+
+.image:hover .image__fragment {
+  background-size: 600%;
+}
+
+.image__fragment {
+  background-image: url('https://unsplash.it/g/768/768?image=874');
+// background: url(Beauty.jpg);
+  background-size: 400%;
+  margin: 0 $gutter-size $gutter-size 0;
+  width: $fragment-size;
+  height: $fragment-size;
+  float: left;
+  transition: background-size 0.5s;
+}
+
+@for $i from 1 through $divisions {
+  .image__fragment:nth-child(#{$divisions}n + #{$i}) {
+    background-position-x: ($i - 1) * (100% / $divisions);
+  }
+  
+  @if $i < $divisions {
+    .image__fragment:nth-child(n + #{$i * $divisions + 1}) {
+      background-position-y: ($i) * (100% / $divisions);
+    }
+  }
+}
+  

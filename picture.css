@@ -1,10 +1,48 @@
-/*# sourceMappingURL=picture.scss.map */
 body {
-  background-color: #151515;
-  color: rgba(0, 255, 178, 0.18);
-  text-align: center; }
+  background-color: #1A1919; }
 
-body:hover {
-  color: #00ffb2; }
+.image {
+  margin: 1rem auto;
+  width: 50%;
+  height: 99.5%; }
+
+.image:hover .image__fragment {
+  background-size: 600%; }
+
+.image__fragment {
+  background-image: url("https://unsplash.it/g/768/768?image=874");
+  background-size: 400%;
+  margin: 0 4px 4px 0;
+  width: 120px;
+  height: 120px;
+  float: left;
+  transition: background-size 0.5s; }
+
+.image__fragment:nth-child(5n + 1) {
+  background-position-x: 0%; }
+
+.image__fragment:nth-child(n + 6) {
+  background-position-y: 20%; }
+
+.image__fragment:nth-child(5n + 2) {
+  background-position-x: 20%; }
+
+.image__fragment:nth-child(n + 11) {
+  background-position-y: 40%; }
+
+.image__fragment:nth-child(5n + 3) {
+  background-position-x: 40%; }
+
+.image__fragment:nth-child(n + 16) {
+  background-position-y: 60%; }
+
+.image__fragment:nth-child(5n + 4) {
+  background-position-x: 60%; }
+
+.image__fragment:nth-child(n + 21) {
+  background-position-y: 80%; }
+
+.image__fragment:nth-child(5n + 5) {
+  background-position-x: 80%; }
 
 /*# sourceMappingURL=picture.css.map */
